@@ -77,7 +77,7 @@ class __TwigTemplate_ba3240ae8e00d58ed9fe485ba12cb41581523a00f42cbdd225cb7b6c0cb
             ob_start();
             // line 8
             echo "            ";
-            $context["status_color"] = ((twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 8, $this->source); })()), "counterrors", [], "any", false, false, false, 8)) ? ("red") : (((twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 8, $this->source); })()), "countwarnings", [], "any", false, false, false, 8)) ? ("yellow") : ("none"))));
+            $context["status_color"] = ((twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 8, $this->source); })()), "counterrors", [], "any", false, false, false, 8)) ? ("red") : ("yellow"));
             // line 9
             echo "            ";
             echo twig_include($this->env, $context, "@WebProfiler/Icon/logger.svg");
@@ -118,7 +118,7 @@ class __TwigTemplate_ba3240ae8e00d58ed9fe485ba12cb41581523a00f42cbdd225cb7b6c0cb
                 <b>Deprecations</b>
                 <span class=\"sf-toolbar-status sf-toolbar-status-";
             // line 26
-            echo ((twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 26, $this->source); })()), "countdeprecations", [], "any", false, false, false, 26)) ? ("none") : (""));
+            echo ((twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 26, $this->source); })()), "countdeprecations", [], "any", false, false, false, 26)) ? ("yellow") : (""));
             echo "\">";
             echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, ($context["collector"] ?? null), "countdeprecations", [], "any", true, true, false, 26)) ? (_twig_default_filter(twig_get_attribute($this->env, $this->source, ($context["collector"] ?? null), "countdeprecations", [], "any", false, false, false, 26), 0)) : (0)), "html", null, true);
             echo "</span>
@@ -153,7 +153,7 @@ class __TwigTemplate_ba3240ae8e00d58ed9fe485ba12cb41581523a00f42cbdd225cb7b6c0cb
 
         // line 35
         echo "    <span class=\"label label-status-";
-        echo ((twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 35, $this->source); })()), "counterrors", [], "any", false, false, false, 35)) ? ("error") : (((twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 35, $this->source); })()), "countwarnings", [], "any", false, false, false, 35)) ? ("warning") : ("none"))));
+        echo ((twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 35, $this->source); })()), "counterrors", [], "any", false, false, false, 35)) ? ("error") : ((((twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 35, $this->source); })()), "countdeprecations", [], "any", false, false, false, 35) || twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 35, $this->source); })()), "countwarnings", [], "any", false, false, false, 35))) ? ("warning") : (""))));
         echo " ";
         echo ((twig_test_empty(twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 35, $this->source); })()), "logs", [], "any", false, false, false, 35))) ? ("disabled") : (""));
         echo "\">
@@ -304,7 +304,7 @@ class __TwigTemplate_ba3240ae8e00d58ed9fe485ba12cb41581523a00f42cbdd225cb7b6c0cb
                 ";
             // line 91
             echo "                <h3 class=\"tab-title\">Deprecations <span class=\"badge status-";
-            echo ((twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 91, $this->source); })()), "countdeprecations", [], "any", false, false, false, 91)) ? ("none") : (""));
+            echo ((twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 91, $this->source); })()), "countdeprecations", [], "any", false, false, false, 91)) ? ("warning") : (""));
             echo "\">";
             echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, ($context["collector"] ?? null), "countdeprecations", [], "any", true, true, false, 91)) ? (_twig_default_filter(twig_get_attribute($this->env, $this->source, ($context["collector"] ?? null), "countdeprecations", [], "any", false, false, false, 91), 0)) : (0)), "html", null, true);
             echo "</span></h3>
@@ -609,9 +609,9 @@ class __TwigTemplate_ba3240ae8e00d58ed9fe485ba12cb41581523a00f42cbdd225cb7b6c0cb
             foreach ($context['_seq'] as $context["_key"] => $context["log"]) {
                 // line 204
                 echo "                ";
-                $context["css_class"] = (( !(isset($context["is_deprecation"]) || array_key_exists("is_deprecation", $context) ? $context["is_deprecation"] : (function () { throw new RuntimeError('Variable "is_deprecation" does not exist.', 204, $this->source); })())) ? (((twig_in_filter(twig_get_attribute($this->env, $this->source,                 // line 205
+                $context["css_class"] = (((isset($context["is_deprecation"]) || array_key_exists("is_deprecation", $context) ? $context["is_deprecation"] : (function () { throw new RuntimeError('Variable "is_deprecation" does not exist.', 204, $this->source); })())) ? ("") : (((twig_in_filter(twig_get_attribute($this->env, $this->source,                 // line 205
 $context["log"], "priorityName", [], "any", false, false, false, 205), [0 => "CRITICAL", 1 => "ERROR", 2 => "ALERT", 3 => "EMERGENCY"])) ? ("status-error") : ((((0 === twig_compare(twig_get_attribute($this->env, $this->source,                 // line 206
-$context["log"], "priorityName", [], "any", false, false, false, 206), "WARNING"))) ? ("status-warning") : (""))))) : (""));
+$context["log"], "priorityName", [], "any", false, false, false, 206), "WARNING"))) ? ("status-warning") : (""))))));
                 // line 208
                 echo "                <tr class=\"";
                 echo twig_escape_filter($this->env, (isset($context["css_class"]) || array_key_exists("css_class", $context) ? $context["css_class"] : (function () { throw new RuntimeError('Variable "css_class" does not exist.', 208, $this->source); })()), "html", null, true);
@@ -623,7 +623,7 @@ $context["log"], "priorityName", [], "any", false, false, false, 206), "WARNING"
                 }
                 if ((isset($context["channel_is_defined"]) || array_key_exists("channel_is_defined", $context) ? $context["channel_is_defined"] : (function () { throw new RuntimeError('Variable "channel_is_defined" does not exist.', 208, $this->source); })())) {
                     echo " data-filter-channel=\"";
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["log"], "channel", [], "any", false, false, false, 208), "html", null, true);
+                    (( !(null === twig_get_attribute($this->env, $this->source, $context["log"], "channel", [], "any", false, false, false, 208))) ? (print (twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["log"], "channel", [], "any", false, false, false, 208), "html", null, true))) : (print ("")));
                     echo "\"";
                 }
                 echo ">
@@ -843,7 +843,7 @@ $context["log"], "priorityName", [], "any", false, false, false, 206), "WARNING"
 {% block toolbar %}
     {% if collector.counterrors or collector.countdeprecations or collector.countwarnings %}
         {% set icon %}
-            {% set status_color = collector.counterrors ? 'red' : collector.countwarnings ? 'yellow' : 'none' %}
+            {% set status_color = collector.counterrors ? 'red' : 'yellow' %}
             {{ include('@WebProfiler/Icon/logger.svg') }}
             <span class=\"sf-toolbar-value\">{{ collector.counterrors ?: (collector.countdeprecations + collector.countwarnings) }}</span>
         {% endset %}
@@ -861,7 +861,7 @@ $context["log"], "priorityName", [], "any", false, false, false, 206), "WARNING"
 
             <div class=\"sf-toolbar-info-piece\">
                 <b>Deprecations</b>
-                <span class=\"sf-toolbar-status sf-toolbar-status-{{ collector.countdeprecations ? 'none' }}\">{{ collector.countdeprecations|default(0) }}</span>
+                <span class=\"sf-toolbar-status sf-toolbar-status-{{ collector.countdeprecations ? 'yellow' }}\">{{ collector.countdeprecations|default(0) }}</span>
             </div>
         {% endset %}
 
@@ -870,7 +870,7 @@ $context["log"], "priorityName", [], "any", false, false, false, 206), "WARNING"
 {% endblock %}
 
 {% block menu %}
-    <span class=\"label label-status-{{ collector.counterrors ? 'error' : collector.countwarnings ? 'warning' : 'none' }} {{ collector.logs is empty ? 'disabled' }}\">
+    <span class=\"label label-status-{{ collector.counterrors ? 'error' : collector.countdeprecations or collector.countwarnings ? 'warning' }} {{ collector.logs is empty ? 'disabled' }}\">
         <span class=\"icon\">{{ include('@WebProfiler/Icon/logger.svg') }}</span>
         <strong>Logs</strong>
         {% if collector.counterrors or collector.countdeprecations or collector.countwarnings %}
@@ -926,7 +926,7 @@ $context["log"], "priorityName", [], "any", false, false, false, 206), "WARNING"
             <div class=\"tab {{ not has_error_logs and collector.countdeprecations > 0 ? 'active' }}\">
                 {# 'deprecation_logs|length' is not used because deprecations are
                 now grouped and the group count doesn't match the message count #}
-                <h3 class=\"tab-title\">Deprecations <span class=\"badge status-{{ collector.countdeprecations ? 'none' }}\">{{ collector.countdeprecations|default(0) }}</span></h3>
+                <h3 class=\"tab-title\">Deprecations <span class=\"badge status-{{ collector.countdeprecations ? 'warning' }}\">{{ collector.countdeprecations|default(0) }}</span></h3>
                 <p class=\"text-muted\">Log messages generated by using features marked as deprecated.</p>
 
                 <div class=\"tab-content\">
@@ -1039,11 +1039,11 @@ $context["log"], "priorityName", [], "any", false, false, false, 206), "WARNING"
 
         <tbody>
             {% for log in logs %}
-                {% set css_class = not is_deprecation
-                    ? log.priorityName in ['CRITICAL', 'ERROR', 'ALERT', 'EMERGENCY'] ? 'status-error'
+                {% set css_class = is_deprecation ? ''
+                    : log.priorityName in ['CRITICAL', 'ERROR', 'ALERT', 'EMERGENCY'] ? 'status-error'
                     : log.priorityName == 'WARNING' ? 'status-warning'
                 %}
-                <tr class=\"{{ css_class }}\"{% if show_level %} data-filter-level=\"{{ log.priorityName|lower }}\"{% endif %}{% if channel_is_defined %} data-filter-channel=\"{{ log.channel }}\"{% endif %}>
+                <tr class=\"{{ css_class }}\"{% if show_level %} data-filter-level=\"{{ log.priorityName|lower }}\"{% endif %}{% if channel_is_defined %} data-filter-channel=\"{{ log.channel is not null ? log.channel : '' }}\"{% endif %}>
                     <td class=\"font-normal text-small\" nowrap>
                         {% if show_level %}
                             <span class=\"colored text-bold\">{{ log.priorityName }}</span>

@@ -50,7 +50,6 @@ class __TwigTemplate_6d69bcf75f143db5de8c47d73f8194df34cec9ae701918823db5bc8a9c6
     ";
         // line 7
         echo "
-if (typeof Sfjs === 'undefined' || typeof Sfjs.loadToolbar === 'undefined') {
     Sfjs = (function() {
         \"use strict\";
 
@@ -315,9 +314,9 @@ if (typeof Sfjs === 'undefined' || typeof Sfjs.loadToolbar === 'undefined') {
         };
 
         ";
-        // line 272
+        // line 271
         if (array_key_exists("excluded_ajax_paths", $context)) {
-            // line 273
+            // line 272
             echo "            if (window.fetch && window.fetch.polyfill === undefined) {
                 var oldFetch = window.fetch;
                 window.fetch = function () {
@@ -338,8 +337,8 @@ if (typeof Sfjs === 'undefined' || typeof Sfjs.loadToolbar === 'undefined') {
                         url = String(url);
                     }
                     if (!url.match(new RegExp(";
-            // line 292
-            echo json_encode((isset($context["excluded_ajax_paths"]) || array_key_exists("excluded_ajax_paths", $context) ? $context["excluded_ajax_paths"] : (function () { throw new RuntimeError('Variable "excluded_ajax_paths" does not exist.', 292, $this->source); })()));
+            // line 291
+            echo json_encode((isset($context["excluded_ajax_paths"]) || array_key_exists("excluded_ajax_paths", $context) ? $context["excluded_ajax_paths"] : (function () { throw new RuntimeError('Variable "excluded_ajax_paths" does not exist.', 291, $this->source); })()));
             echo "))) {
                         var method = 'GET';
                         if (params && params.method !== undefined) {
@@ -384,28 +383,28 @@ if (typeof Sfjs === 'undefined' || typeof Sfjs.loadToolbar === 'undefined') {
                     var path = url;
                     if (url.substr(0, 1) === '/') {
                         if (0 === url.indexOf('";
-            // line 335
-            echo twig_escape_filter($this->env, twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () { throw new RuntimeError('Variable "request" does not exist.', 335, $this->source); })()), "basePath", [], "any", false, false, false, 335), "js"), "html", null, true);
+            // line 334
+            echo twig_escape_filter($this->env, twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () { throw new RuntimeError('Variable "request" does not exist.', 334, $this->source); })()), "basePath", [], "any", false, false, false, 334), "js"), "html", null, true);
             echo "')) {
                             path = url.substr(";
-            // line 336
-            echo twig_escape_filter($this->env, twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () { throw new RuntimeError('Variable "request" does not exist.', 336, $this->source); })()), "basePath", [], "any", false, false, false, 336)), "html", null, true);
+            // line 335
+            echo twig_escape_filter($this->env, twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () { throw new RuntimeError('Variable "request" does not exist.', 335, $this->source); })()), "basePath", [], "any", false, false, false, 335)), "html", null, true);
             echo ");
                         }
                     }
                     else if (0 === url.indexOf('";
-            // line 339
-            echo twig_escape_filter($this->env, twig_escape_filter($this->env, (twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () { throw new RuntimeError('Variable "request" does not exist.', 339, $this->source); })()), "schemeAndHttpHost", [], "any", false, false, false, 339) . twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () { throw new RuntimeError('Variable "request" does not exist.', 339, $this->source); })()), "basePath", [], "any", false, false, false, 339)), "js"), "html", null, true);
+            // line 338
+            echo twig_escape_filter($this->env, twig_escape_filter($this->env, (twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () { throw new RuntimeError('Variable "request" does not exist.', 338, $this->source); })()), "schemeAndHttpHost", [], "any", false, false, false, 338) . twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () { throw new RuntimeError('Variable "request" does not exist.', 338, $this->source); })()), "basePath", [], "any", false, false, false, 338)), "js"), "html", null, true);
             echo "')) {
                         path = url.substr(";
-            // line 340
-            echo twig_escape_filter($this->env, twig_length_filter($this->env, (twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () { throw new RuntimeError('Variable "request" does not exist.', 340, $this->source); })()), "schemeAndHttpHost", [], "any", false, false, false, 340) . twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () { throw new RuntimeError('Variable "request" does not exist.', 340, $this->source); })()), "basePath", [], "any", false, false, false, 340))), "html", null, true);
+            // line 339
+            echo twig_escape_filter($this->env, twig_length_filter($this->env, (twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () { throw new RuntimeError('Variable "request" does not exist.', 339, $this->source); })()), "schemeAndHttpHost", [], "any", false, false, false, 339) . twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () { throw new RuntimeError('Variable "request" does not exist.', 339, $this->source); })()), "basePath", [], "any", false, false, false, 339))), "html", null, true);
             echo ");
                     }
 
                     if (!path.match(new RegExp(";
-            // line 343
-            echo json_encode((isset($context["excluded_ajax_paths"]) || array_key_exists("excluded_ajax_paths", $context) ? $context["excluded_ajax_paths"] : (function () { throw new RuntimeError('Variable "excluded_ajax_paths" does not exist.', 343, $this->source); })()));
+            // line 342
+            echo json_encode((isset($context["excluded_ajax_paths"]) || array_key_exists("excluded_ajax_paths", $context) ? $context["excluded_ajax_paths"] : (function () { throw new RuntimeError('Variable "excluded_ajax_paths" does not exist.', 342, $this->source); })()));
             echo "))) {
                         var stackElement = {
                             error: false,
@@ -436,7 +435,7 @@ if (typeof Sfjs === 'undefined' || typeof Sfjs.loadToolbar === 'undefined') {
             }
         ";
         }
-        // line 372
+        // line 371
         echo "
         return {
             hasClass: hasClass,
@@ -492,14 +491,10 @@ if (typeof Sfjs === 'undefined' || typeof Sfjs.loadToolbar === 'undefined') {
                 this.load(
                     'sfwdt' + token,
                     '";
-        // line 426
+        // line 425
         echo twig_escape_filter($this->env, twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("_wdt", ["token" => "xxxxxx"]), "js"), "html", null, true);
         echo "'.replace(/xxxxxx/, newToken),
                     function(xhr, el) {
-                        /* Do nothing in the edge case where the toolbar has already been replaced with a new one */
-                        if (!document.getElementById('sfToolbarMainContent-' + newToken)) {
-                            return;
-                        }
 
                         /* Evaluate in global scope scripts embedded inside the toolbar */
                         var i, scripts = [].slice.call(el.querySelectorAll('script'));
@@ -549,11 +544,7 @@ if (typeof Sfjs === 'undefined' || typeof Sfjs.loadToolbar === 'undefined') {
                                 }
                             };
                         }
-                        var hideButton = document.getElementById('sfToolbarHideButton-' + newToken);
-                        var hideButtonSvg = hideButton.querySelector('svg');
-                        hideButtonSvg.setAttribute('aria-hidden', 'true');
-                        hideButtonSvg.setAttribute('focusable', 'false');
-                        addEventListener(hideButton, 'click', function (event) {
+                        addEventListener(document.getElementById('sfToolbarHideButton-' + newToken), 'click', function (event) {
                             event.preventDefault();
 
                             var p = this.parentNode;
@@ -562,11 +553,7 @@ if (typeof Sfjs === 'undefined' || typeof Sfjs.loadToolbar === 'undefined') {
                             document.getElementById('sfMiniToolbar-' + newToken).style.display = 'block';
                             setPreference('toolbar/displayState', 'none');
                         });
-                        var showButton = document.getElementById('sfToolbarMiniToggler-' + newToken);
-                        var showButtonSvg = showButton.querySelector('svg');
-                        showButtonSvg.setAttribute('aria-hidden', 'true');
-                        showButtonSvg.setAttribute('focusable', 'false');
-                        addEventListener(showButton, 'click', function (event) {
+                        addEventListener(document.getElementById('sfToolbarMiniToggler-' + newToken), 'click', function (event) {
                             event.preventDefault();
 
                             var elem = this.parentNode;
@@ -616,7 +603,7 @@ if (typeof Sfjs === 'undefined' || typeof Sfjs.loadToolbar === 'undefined') {
                                 <div class=\"sf-toolbarreset\">\\
                                     <div class=\"sf-toolbar-icon\"><svg width=\"26\" height=\"28\" xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" x=\"0px\" y=\"0px\" viewBox=\"0 0 26 28\" enable-background=\"new 0 0 26 28\" xml:space=\"preserve\"><path fill=\"#FFFFFF\" d=\"M13 0C5.8 0 0 5.8 0 13c0 7.2 5.8 13 13 13c7.2 0 13-5.8 13-13C26 5.8 20.2 0 13 0z M20 7.5 c-0.6 0-1-0.3-1-0.9c0-0.2 0-0.4 0.2-0.6c0.1-0.3 0.2-0.3 0.2-0.4c0-0.3-0.5-0.4-0.7-0.4c-2 0.1-2.5 2.7-2.9 4.8l-0.2 1.1 c1.1 0.2 1.9 0 2.4-0.3c0.6-0.4-0.2-0.8-0.1-1.3C18 9.2 18.4 9 18.7 8.9c0.5 0 0.8 0.5 0.8 1c0 0.8-1.1 2-3.3 1.9 c-0.3 0-0.5 0-0.7-0.1L15 14.1c-0.4 1.7-0.9 4.1-2.6 6.2c-1.5 1.8-3.1 2.1-3.8 2.1c-1.3 0-2.1-0.6-2.2-1.6c0-0.9 0.8-1.4 1.3-1.4 c0.7 0 1.2 0.5 1.2 1.1c0 0.5-0.2 0.6-0.4 0.7c-0.1 0.1-0.3 0.2-0.3 0.4c0 0.1 0.1 0.3 0.4 0.3c0.5 0 0.9-0.3 1.2-0.5 c1.3-1 1.7-2.9 2.4-6.2l0.1-0.8c0.2-1.1 0.5-2.3 0.8-3.5c-0.9-0.7-1.4-1.5-2.6-1.8c-0.8-0.2-1.3 0-1.7 0.4C8.4 10 8.6 10.7 9 11.1 l0.7 0.7c0.8 0.9 1.3 1.7 1.1 2.7c-0.3 1.6-2.1 2.8-4.3 2.1c-1.9-0.6-2.2-1.9-2-2.7c0.2-0.6 0.7-0.8 1.2-0.6 c0.5 0.2 0.7 0.8 0.6 1.3c0 0.1 0 0.1-0.1 0.3C6 15 5.9 15.2 5.9 15.3c-0.1 0.4 0.4 0.7 0.8 0.8c0.8 0.3 1.7-0.2 1.9-0.9 c0.2-0.6-0.2-1.1-0.4-1.2l-0.8-0.9c-0.4-0.4-1.2-1.5-0.8-2.8c0.2-0.5 0.5-1 0.9-1.4c1-0.7 2-0.8 3-0.6c1.3 0.4 1.9 1.2 2.8 1.9 c0.5-1.3 1.1-2.6 2-3.8c0.9-1 2-1.7 3.3-1.8C20 4.8 21 5.4 21 6.3C21 6.7 20.8 7.5 20 7.5z\"/></svg></div>\\
                                     An error occurred while loading the web debug toolbar. <a href=\"";
-        // line 547
+        // line 534
         echo twig_escape_filter($this->env, twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getUrl("_profiler_home"), "js"), "html", null, true);
         echo "' + newToken + '>Open the web profiler.</a>\\
                                 </div>\\
@@ -886,7 +873,7 @@ if (typeof Sfjs === 'undefined' || typeof Sfjs.loadToolbar === 'undefined') {
         Sfjs.createTabs();
         Sfjs.createToggles();
     });
-}
+
 /*]]>*/</script>
 ";
         
@@ -909,7 +896,7 @@ if (typeof Sfjs === 'undefined' || typeof Sfjs.loadToolbar === 'undefined') {
 
     public function getDebugInfo()
     {
-        return array (  620 => 547,  496 => 426,  440 => 372,  408 => 343,  402 => 340,  398 => 339,  392 => 336,  388 => 335,  342 => 292,  321 => 273,  319 => 272,  52 => 7,  43 => 3,);
+        return array (  607 => 534,  495 => 425,  439 => 371,  407 => 342,  401 => 339,  397 => 338,  391 => 335,  387 => 334,  341 => 291,  320 => 272,  318 => 271,  52 => 7,  43 => 3,);
     }
 
     public function getSourceContext()
@@ -921,7 +908,6 @@ if (typeof Sfjs === 'undefined' || typeof Sfjs.loadToolbar === 'undefined') {
                 them as JavaScript source code. Always use '/*' comments instead
                 of '//' comments to avoid impossible-to-debug side-effects #}
 
-if (typeof Sfjs === 'undefined' || typeof Sfjs.loadToolbar === 'undefined') {
     Sfjs = (function() {
         \"use strict\";
 
@@ -1341,10 +1327,6 @@ if (typeof Sfjs === 'undefined' || typeof Sfjs.loadToolbar === 'undefined') {
                     'sfwdt' + token,
                     '{{ url(\"_wdt\", { \"token\": \"xxxxxx\" })|escape('js') }}'.replace(/xxxxxx/, newToken),
                     function(xhr, el) {
-                        /* Do nothing in the edge case where the toolbar has already been replaced with a new one */
-                        if (!document.getElementById('sfToolbarMainContent-' + newToken)) {
-                            return;
-                        }
 
                         /* Evaluate in global scope scripts embedded inside the toolbar */
                         var i, scripts = [].slice.call(el.querySelectorAll('script'));
@@ -1394,11 +1376,7 @@ if (typeof Sfjs === 'undefined' || typeof Sfjs.loadToolbar === 'undefined') {
                                 }
                             };
                         }
-                        var hideButton = document.getElementById('sfToolbarHideButton-' + newToken);
-                        var hideButtonSvg = hideButton.querySelector('svg');
-                        hideButtonSvg.setAttribute('aria-hidden', 'true');
-                        hideButtonSvg.setAttribute('focusable', 'false');
-                        addEventListener(hideButton, 'click', function (event) {
+                        addEventListener(document.getElementById('sfToolbarHideButton-' + newToken), 'click', function (event) {
                             event.preventDefault();
 
                             var p = this.parentNode;
@@ -1407,11 +1385,7 @@ if (typeof Sfjs === 'undefined' || typeof Sfjs.loadToolbar === 'undefined') {
                             document.getElementById('sfMiniToolbar-' + newToken).style.display = 'block';
                             setPreference('toolbar/displayState', 'none');
                         });
-                        var showButton = document.getElementById('sfToolbarMiniToggler-' + newToken);
-                        var showButtonSvg = showButton.querySelector('svg');
-                        showButtonSvg.setAttribute('aria-hidden', 'true');
-                        showButtonSvg.setAttribute('focusable', 'false');
-                        addEventListener(showButton, 'click', function (event) {
+                        addEventListener(document.getElementById('sfToolbarMiniToggler-' + newToken), 'click', function (event) {
                             event.preventDefault();
 
                             var elem = this.parentNode;
@@ -1728,7 +1702,7 @@ if (typeof Sfjs === 'undefined' || typeof Sfjs.loadToolbar === 'undefined') {
         Sfjs.createTabs();
         Sfjs.createToggles();
     });
-}
+
 /*]]>*/</script>
 ", "@WebProfiler/Profiler/base_js.html.twig", "/Users/eddysalibi/Desktop/Dev/ESGI/Symphony/ratrappage/tripeDream.github.io/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/base_js.html.twig");
     }

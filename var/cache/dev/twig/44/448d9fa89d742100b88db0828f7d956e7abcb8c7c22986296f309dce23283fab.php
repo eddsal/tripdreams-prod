@@ -113,7 +113,7 @@ class __TwigTemplate_8efa4d7edb0cb63574f098db83490d20768148e2e955c087dbad96ec41d
 
                         ";
         // line 111
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Extension\HttpKernelRuntime')->renderFragment(Symfony\Bridge\Twig\Extension\HttpKernelExtension::controller("web_profiler.controller.profiler::searchBarAction", twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () { throw new RuntimeError('Variable "request" does not exist.', 111, $this->source); })()), "query", [], "any", false, false, false, 111), "all", [], "any", false, false, false, 111)));
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Extension\HttpKernelRuntime')->renderFragment($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("_profiler_search_bar", twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["request"]) || array_key_exists("request", $context) ? $context["request"] : (function () { throw new RuntimeError('Variable "request" does not exist.', 111, $this->source); })()), "query", [], "any", false, false, false, 111), "all", [], "any", false, false, false, 111)));
         echo "
                     </div>
                 </div>
@@ -599,7 +599,7 @@ class __TwigTemplate_8efa4d7edb0cb63574f098db83490d20768148e2e955c087dbad96ec41d
                             {{ include('@WebProfiler/Icon/search.svg') }} <span class=\"hidden-small\">Search</span>
                         </a>
 
-                        {{ render(controller('web_profiler.controller.profiler::searchBarAction', request.query.all)) }}
+                        {{ render(path('_profiler_search_bar', request.query.all)) }}
                     </div>
                 </div>
 
@@ -614,7 +614,7 @@ class __TwigTemplate_8efa4d7edb0cb63574f098db83490d20768148e2e955c087dbad96ec41d
                                 {%- endif -%}
                             {%- endset %}
                             {% if menu is not empty %}
-                                <li class=\"{{ name }} {{ name == panel ? 'selected' }}\">
+                                <li class=\"{{ name }} {{ name == panel ? 'selected' : '' }}\">
                                     <a href=\"{{ path('_profiler', { token: token, panel: name }) }}\">{{ menu|raw }}</a>
                                 </li>
                             {% endif %}

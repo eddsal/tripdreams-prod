@@ -45,17 +45,15 @@ class __TwigTemplate_ef3be1ce6b842a5050f072d52f55eb687ceb8c8a9ff50ff731e06546d9c
         // line 2
         echo twig_escape_filter($this->env, (isset($context["token"]) || array_key_exists("token", $context) ? $context["token"] : (function () { throw new RuntimeError('Variable "token" does not exist.', 2, $this->source); })()), "html", null, true);
         echo "\" class=\"sf-minitoolbar\" data-no-turbolink>
-    <button type=\"button\" title=\"Show Symfony toolbar\" id=\"sfToolbarMiniToggler-";
+    <a href=\"#\" title=\"Show Symfony toolbar\" tabindex=\"-1\" id=\"sfToolbarMiniToggler-";
         // line 3
         echo twig_escape_filter($this->env, (isset($context["token"]) || array_key_exists("token", $context) ? $context["token"] : (function () { throw new RuntimeError('Variable "token" does not exist.', 3, $this->source); })()), "html", null, true);
-        echo "\" accesskey=\"D\" aria-expanded=\"false\" aria-controls=\"sfToolbarMainContent-";
-        echo twig_escape_filter($this->env, (isset($context["token"]) || array_key_exists("token", $context) ? $context["token"] : (function () { throw new RuntimeError('Variable "token" does not exist.', 3, $this->source); })()), "html", null, true);
-        echo "\">
+        echo "\" accesskey=\"D\">
         ";
         // line 4
         echo twig_include($this->env, $context, "@WebProfiler/Icon/symfony.svg");
         echo "
-    </button>
+    </a>
 </div>
 <div id=\"sfToolbarClearer-";
         // line 7
@@ -128,17 +126,15 @@ $context["name"], "profiler_markup_version" =>                 // line 17
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 25
         echo "
-    <button class=\"hide-button\" type=\"button\" id=\"sfToolbarHideButton-";
+    <a class=\"hide-button\" id=\"sfToolbarHideButton-";
         // line 26
         echo twig_escape_filter($this->env, (isset($context["token"]) || array_key_exists("token", $context) ? $context["token"] : (function () { throw new RuntimeError('Variable "token" does not exist.', 26, $this->source); })()), "html", null, true);
-        echo "\" title=\"Close Toolbar\" accesskey=\"D\" aria-expanded=\"true\" aria-controls=\"sfToolbarMainContent-";
-        echo twig_escape_filter($this->env, (isset($context["token"]) || array_key_exists("token", $context) ? $context["token"] : (function () { throw new RuntimeError('Variable "token" does not exist.', 26, $this->source); })()), "html", null, true);
-        echo "\">
+        echo "\" title=\"Close Toolbar\" tabindex=\"-1\" accesskey=\"D\">
         ";
         // line 27
         echo twig_include($this->env, $context, "@WebProfiler/Icon/close.svg");
         echo "
-    </button>
+    </a>
 </div>
 <!-- END of Symfony Web Debug Toolbar -->
 ";
@@ -162,16 +158,16 @@ $context["name"], "profiler_markup_version" =>                 // line 17
 
     public function getDebugInfo()
     {
-        return array (  139 => 27,  133 => 26,  130 => 25,  116 => 24,  113 => 23,  107 => 21,  100 => 19,  99 => 18,  98 => 17,  97 => 16,  96 => 15,  95 => 14,  94 => 13,  91 => 12,  88 => 11,  71 => 10,  67 => 9,  62 => 7,  56 => 4,  50 => 3,  46 => 2,  43 => 1,);
+        return array (  135 => 27,  131 => 26,  128 => 25,  114 => 24,  111 => 23,  105 => 21,  98 => 19,  97 => 18,  96 => 17,  95 => 16,  94 => 15,  93 => 14,  92 => 13,  89 => 12,  86 => 11,  69 => 10,  65 => 9,  60 => 7,  54 => 4,  50 => 3,  46 => 2,  43 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<!-- START of Symfony Web Debug Toolbar -->
 <div id=\"sfMiniToolbar-{{ token }}\" class=\"sf-minitoolbar\" data-no-turbolink>
-    <button type=\"button\" title=\"Show Symfony toolbar\" id=\"sfToolbarMiniToggler-{{ token }}\" accesskey=\"D\" aria-expanded=\"false\" aria-controls=\"sfToolbarMainContent-{{ token }}\">
+    <a href=\"#\" title=\"Show Symfony toolbar\" tabindex=\"-1\" id=\"sfToolbarMiniToggler-{{ token }}\" accesskey=\"D\">
         {{ include('@WebProfiler/Icon/symfony.svg') }}
-    </button>
+    </a>
 </div>
 <div id=\"sfToolbarClearer-{{ token }}\" class=\"sf-toolbar-clearer\"></div>
 
@@ -192,9 +188,9 @@ $context["name"], "profiler_markup_version" =>                 // line 17
         {% endif %}
     {% endfor %}
 
-    <button class=\"hide-button\" type=\"button\" id=\"sfToolbarHideButton-{{ token }}\" title=\"Close Toolbar\" accesskey=\"D\" aria-expanded=\"true\" aria-controls=\"sfToolbarMainContent-{{ token }}\">
+    <a class=\"hide-button\" id=\"sfToolbarHideButton-{{ token }}\" title=\"Close Toolbar\" tabindex=\"-1\" accesskey=\"D\">
         {{ include('@WebProfiler/Icon/close.svg') }}
-    </button>
+    </a>
 </div>
 <!-- END of Symfony Web Debug Toolbar -->
 ", "@WebProfiler/Profiler/toolbar.html.twig", "/Users/eddysalibi/Desktop/Dev/ESGI/Symphony/ratrappage/tripeDream.github.io/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/toolbar.html.twig");

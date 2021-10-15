@@ -380,7 +380,7 @@ class __TwigTemplate_262583eabd92e361448a2b0e42d15bdb0dc84eeb036c1e255b6e06c8737
 
 {% block toolbar %}
     {% if collector.violationsCount > 0 or collector.calls|length %}
-        {% set status_color = collector.violationsCount ? 'red' %}
+        {% set status_color = collector.violationsCount ? 'red' : '' %}
         {% set icon %}
             {{ include('@WebProfiler/Icon/validator.svg') }}
             <span class=\"sf-toolbar-value\">

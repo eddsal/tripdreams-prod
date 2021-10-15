@@ -41,7 +41,7 @@ class __TwigTemplate_c19a825d84066b27750c26469cc11c961739e7ab4513776f3c3dbfbc3c9
 
         // line 1
         echo ".container {
-    max-width: none;
+    max-width: auto;
     margin: 0;
     padding: 0;
 }
@@ -70,7 +70,7 @@ class __TwigTemplate_c19a825d84066b27750c26469cc11c961739e7ab4513776f3c3dbfbc3c9
 }
 
 .exception-message-wrapper .container {
-    min-height: unset;
+    min-height: auto;
 }
 ";
         
@@ -94,7 +94,7 @@ class __TwigTemplate_c19a825d84066b27750c26469cc11c961739e7ab4513776f3c3dbfbc3c9
     public function getSourceContext()
     {
         return new Source(".container {
-    max-width: none;
+    max-width: auto;
     margin: 0;
     padding: 0;
 }
@@ -123,7 +123,7 @@ class __TwigTemplate_c19a825d84066b27750c26469cc11c961739e7ab4513776f3c3dbfbc3c9
 }
 
 .exception-message-wrapper .container {
-    min-height: unset;
+    min-height: auto;
 }
 ", "@WebProfiler/Collector/exception.css.twig", "/Users/eddysalibi/Desktop/Dev/ESGI/Symphony/ratrappage/tripeDream.github.io/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.css.twig");
     }
